@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdMob AdSense Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e9ecef;
+            padding: 48px 24px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 12px;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #6c757d;
+            max-width: 480px;
+            margin: 0 auto 24px;
+        }
+        .badge {
+            display: inline-block;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .badge:hover { background: #333; }
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin-bottom: 48px;
+        }
+        .feature {
+            background: #fff;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 24px;
+        }
+        .feature-icon {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+        .feature h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+        }
+        .feature p {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        section {
+            background: #fff;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 24px;
+        }
+        section h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1a1a2e;
+        }
+        section p, section li {
+            font-size: 0.95rem;
+            color: #495057;
+        }
+        section ul {
+            padding-left: 20px;
+        }
+        section li {
+            margin-bottom: 6px;
+        }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            font-size: 0.85rem;
+            color: #adb5bd;
+            border-top: 1px solid #e9ecef;
+            background: #fff;
+        }
+        footer a { color: #6c757d; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AdMob AdSense Dashboard</h1>
+    <p>Track your AdMob and AdSense earnings in one place.</p>
+    <a class="badge" href="https://play.google.com/store/apps/details?id=com.purplusnow.adrevenuecontrol">
+        ▶ Get it on Google Play
+    </a>
+</header>
+
+<main>
+    <div class="features">
+        <div class="feature">
+            <div class="feature-icon">📊</div>
+            <h3>AdMob Dashboard</h3>
+            <p>View your daily and total estimated earnings from AdMob ads.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">💰</div>
+            <h3>AdSense Overview</h3>
+            <p>Monitor your AdSense account balance and performance at a glance.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🔒</div>
+            <h3>Secure & Private</h3>
+            <p>Connects directly to your Google account. No data stored on our servers.</p>
+        </div>
+    </div>
+
+    <section>
+        <h2>About This App</h2>
+        <p>
+            AdMob AdSense Dashboard is an Android app that lets you check your AdMob and AdSense
+            revenue quickly without opening a browser. Sign in with your Google account and
+            see your earnings dashboard instantly.
+        </p>
+    </section>
+
+    <section>
+        <h2>Data Usage</h2>
+        <p>This app accesses the following Google APIs on your behalf:</p>
+        <ul>
+            <li><strong>AdMob API</strong> (admob.readonly, admob.report) — to read your AdMob earnings and reports</li>
+            <li><strong>AdSense Management API</strong> (adsense.readonly) — to read your AdSense account data</li>
+        </ul>
+        <p style="margin-top: 12px;">
+            All data is fetched directly from Google's APIs and displayed only on your device.
+            We do not collect, store, or share your revenue data.
+        </p>
+    </section>
+
+    <section>
+        <h2>Support</h2>
+        <p>For questions or feedback, contact us at: <a href="mailto:purplusnow@gmail.com">purplusnow@gmail.com</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>
+        &copy; 2026 Purplusnow &nbsp;|&nbsp;
+        <a href="admob-privacy-policy.html">Privacy Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>
