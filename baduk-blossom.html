@@ -44,10 +44,10 @@
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="card">
+  <div class="wrap">
+    <div class="card">
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: October 16, 2026</p>
+      <p class="meta">Last updated: October 19, 2026</p>
 
       <h2>Who this policy covers</h2>
       <p>
@@ -57,7 +57,7 @@
       </p>
       <table>
         <tr><th>App name (English)</th><td>Baduk Blossom</td></tr>
-        <tr><th>App name (Korean)</th><td>&#44844;&#44592;&#50896;</td></tr>
+        <tr><th>App name (Korean)</th><td>&#44811;&#44592;&#50896;</td></tr>
         <tr><th>Package name</th><td><code>com.purplusnow.badukblossom</code></td></tr>
         <tr><th>Developer</th><td>Purplusnow</td></tr>
         <tr><th>Contact email</th><td><a href="mailto:purplusnow@gmail.com">purplusnow@gmail.com</a></td></tr>
@@ -69,96 +69,144 @@
       </p>
 
       <h2>Summary</h2>
-      <p>
-        <strong>The App does not collect, transmit, or share any personal data.</strong> It runs entirely on your
-        device. The App does not contain advertising, analytics, crash reporting, or any account system, and it does
-        not request the Android <code>INTERNET</code> permission &mdash; so it is technically unable to send
-        information anywhere.
-      </p>
-
-      <h2>1. Information We Collect</h2>
-      <p>We collect <strong>none</strong>. Specifically, the App does not collect or transmit:</p>
       <ul>
-        <li>Names, email addresses, phone numbers, or any other contact information</li>
-        <li>Account identifiers &mdash; the App has no sign-in, registration, or user profile</li>
-        <li>Advertising identifiers &mdash; the App contains no advertising SDK</li>
-        <li>Analytics, telemetry, usage statistics, or crash reports</li>
-        <li>Location, contacts, photos, camera, microphone, files, calendar, or call/SMS data</li>
-        <li>Device identifiers of any kind</li>
+        <li>Games are played <strong>offline</strong>. The Go engine runs on your device; no board position, move, or
+          game is ever sent anywhere for analysis.</li>
+        <li>The App backs up your save data to our cloud so you can keep your record if you change devices. That backup
+          is tied to an account identifier created automatically on first launch.</li>
+        <li>Signing in with Google is <strong>optional</strong>. If you do, we store your email address so the account
+          can be shown and recovered.</li>
+        <li>There is <strong>no advertising</strong>, no analytics, no crash reporting, and no advertising or device
+          identifier of any kind.</li>
+        <li>You can delete your account and its cloud copy from inside the App, or by email &mdash;
+          see <a href="#delete">Deleting your account and data</a>.</li>
       </ul>
 
-      <h2>2. Data Stored on Your Device</h2>
-      <p>
-        The App saves your game progress locally so you can continue where you left off. This save file stays on your
-        device and is never uploaded. It contains only game data:
-      </p>
-      <ul>
-        <li>Your in-game rank estimate, game results, and per-move scores</li>
-        <li>An unfinished game in progress, so it can be resumed</li>
-        <li>App settings such as sound, coordinate display, and language</li>
-      </ul>
-      <p>
-        You can erase all of this at any time by uninstalling the App, or through your device&rsquo;s
-        <em>Settings &rarr; Apps &rarr; Baduk Blossom &rarr; Storage &rarr; Clear data</em>.
-        Because nothing is uploaded, there is no server-side copy for us to delete and no deletion request to make.
-      </p>
-
-      <h2>3. Permissions</h2>
+      <h2>1. What we collect</h2>
       <table>
-        <tr><th>Permission</th><th>Why</th></tr>
-        <tr><td><code>VIBRATE</code></td><td>Short haptic feedback when a stone is placed. No data is involved.</td></tr>
+        <tr><th>Data</th><th>When</th><th>Why</th><th>Shared?</th></tr>
+        <tr>
+          <td>Account identifier (a random ID)</td>
+          <td>Created automatically the first time the App runs</td>
+          <td>So your save backup can be stored and found again</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Email address</td>
+          <td><strong>Only</strong> if you choose &ldquo;Sign in with Google&rdquo;</td>
+          <td>To show which account you are signed in as, and to restore your record after reinstalling</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Game save data &mdash; rank estimate, game results, per-move scores, an unfinished game, and app settings</td>
+          <td>Backed up periodically while you play</td>
+          <td>So you can continue on another device, or after reinstalling</td>
+          <td>No</td>
+        </tr>
       </table>
       <p>
-        This is the only permission the App declares. In particular, the App does <strong>not</strong> declare the
-        <code>INTERNET</code> permission, and therefore cannot transmit data over a network.
+        That is the complete list. In particular the App does <strong>not</strong> collect your name, phone number,
+        address, payment details, contacts, photos, camera or microphone input, files, calendar, location,
+        installed apps, advertising identifiers, or device identifiers; and it records no analytics, telemetry,
+        usage statistics, or crash reports.
       </p>
 
-      <h2>4. Advertising</h2>
-      <p>The App contains <strong>no advertising</strong>, and no advertising or attribution SDK of any kind.</p>
+      <h2>2. Who processes it</h2>
+      <p>
+        The backup is stored in our own project on <strong>Google Firebase</strong> (Firebase Authentication and
+        Cloud Firestore), acting as our data processor. Data is transmitted over HTTPS and is encrypted in transit.
+        We do not sell, rent, or trade your data, and we do not share it with advertisers, data brokers, or any
+        other third party. Google&rsquo;s own handling of the infrastructure is governed by the
+        <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a> documentation.
+      </p>
 
-      <h2>5. Analytics and Crash Reporting</h2>
-      <p>The App contains <strong>no analytics and no crash reporting</strong>. We receive no usage data from the App.</p>
+      <h2>3. Playing offline</h2>
+      <p>
+        The App ships with its Go engine and neural network inside the application package, and all move analysis,
+        scoring, and rank estimation happen on your device. You can play complete games with no network connection.
+        Nothing about your games is sent anywhere for analysis &mdash; the only thing that leaves your device is the
+        save backup described above.
+      </p>
 
-      <h2>6. Purchases</h2>
+      <h2 id="delete">4. Deleting your account and data</h2>
+      <p>You can do this yourself, at any time, in two ways:</p>
+      <ul>
+        <li><strong>In the App</strong> &mdash; open <em>Settings &rarr; Account &rarr; Delete account and cloud data</em>.
+          After you confirm, the cloud copy and the account are deleted, and the App stops creating a new one.
+          The games stored on your own device are kept, and you can keep playing.</li>
+        <li><strong>By email</strong> &mdash; if you have already uninstalled the App, write to
+          <a href="mailto:purplusnow@gmail.com?subject=Baduk%20Blossom%20account%20deletion">purplusnow@gmail.com</a>
+          with the subject &ldquo;Baduk Blossom account deletion&rdquo;. Tell us the email address you signed in with,
+          or, if you never signed in, the approximate date you installed the App and your in-game rank, so we can
+          locate the record. We reply within 30 days and confirm once the data is removed.</li>
+      </ul>
+      <p>
+        Deletion removes the account identifier, the email address if one was stored, and the save backup. Nothing is
+        retained afterwards. We keep the backup only while the account exists; there is no separate archive or backup
+        retention period beyond the normal operation of the service.
+      </p>
+
+      <h2>5. Permissions</h2>
+      <table>
+        <tr><th>Permission</th><th>Why</th></tr>
+        <tr><td><code>INTERNET</code></td><td>To back up and restore your save data, and to sign in with Google if you choose to.</td></tr>
+        <tr><td><code>VIBRATE</code></td><td>Short haptic feedback when a stone is placed. No data is involved.</td></tr>
+      </table>
+      <p>These are the only permissions the App declares.</p>
+
+      <h2>6. Advertising, analytics, and crash reporting</h2>
+      <p>
+        The App contains <strong>no advertising</strong> and no advertising or attribution SDK, <strong>no
+        analytics</strong>, and <strong>no crash reporting</strong>. We receive no usage data from the App.
+      </p>
+
+      <h2>7. Purchases</h2>
       <p>
         If the App offers an optional subscription, that purchase is processed entirely by
-        <strong>Google Play Billing</strong>. Payment details &mdash; such as card numbers and billing addresses
-        &mdash; are handled by Google and are <strong>never seen or stored by the App or by us</strong>.
-        The App only learns whether an active entitlement exists so it can unlock the corresponding features.
-        Google&rsquo;s handling of that transaction is governed by the
+        <strong>Google Play Billing</strong>. Payment details &mdash; such as card numbers and billing addresses &mdash;
+        are handled by Google and are <strong>never seen or stored by the App or by us</strong>. The App only learns
+        whether an active entitlement exists so it can unlock the corresponding features. Google&rsquo;s handling of
+        that transaction is governed by the
         <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
       </p>
 
-      <h2>7. Data Sharing</h2>
+      <h2>8. Children&rsquo;s privacy</h2>
       <p>
-        We do not sell, rent, or share personal information, because we do not collect any. No data leaves your device.
-      </p>
-
-      <h2>8. Children&rsquo;s Privacy</h2>
-      <p>
-        The App is suitable for general audiences and collects no personal information from anyone, including children.
-        Because nothing is collected, no parental consent mechanism or data-deletion request is required.
+        The App is suitable for general audiences. We do not knowingly collect personal information from children
+        under 13 (or the equivalent minimum age in your country). Signing in with Google is optional and is the only
+        way an email address is ever stored. If you believe a child has signed in and you would like the account and
+        its data removed, use either route in
+        <a href="#delete">Deleting your account and data</a> and we will remove it.
       </p>
 
       <h2>9. Security</h2>
       <p>
-        Your game data stays in the App&rsquo;s private storage area on your device, protected by the Android
-        operating system&rsquo;s app sandbox. Since no data is transmitted, there is no transmission to secure.
+        Save data on your device lives in the App&rsquo;s private storage area, protected by the Android operating
+        system&rsquo;s app sandbox. Data in transit is encrypted with HTTPS. The cloud copy is readable only by the
+        account it belongs to, enforced by Firebase Authentication and security rules.
       </p>
 
-      <h2>10. Changes to This Policy</h2>
+      <h2>10. Your rights</h2>
       <p>
-        If a future version of the App introduces a feature that collects or transmits data, we will update this page
-        before that version is published and change the &ldquo;Last updated&rdquo; date above. Material changes will
-        also be noted in the App&rsquo;s store listing release notes.
+        Depending on where you live, you may have the right to access, correct, export, or delete the data we hold
+        about you, and to object to or restrict its processing. The App itself shows you everything we store about
+        you &mdash; it is your own game record &mdash; and the deletion routes above cover erasure. For anything else,
+        email <a href="mailto:purplusnow@gmail.com">purplusnow@gmail.com</a> and we will respond within 30 days.
       </p>
 
-      <h2>11. Contact</h2>
+      <h2>11. Changes to this policy</h2>
+      <p>
+        If a future version of the App changes what is collected, we will update this page before that version is
+        published and change the &ldquo;Last updated&rdquo; date above. Material changes will also be noted in the
+        App&rsquo;s store listing release notes.
+      </p>
+
+      <h2>12. Contact</h2>
       <p>
         Questions about this policy? Email
         <a href="mailto:purplusnow@gmail.com">purplusnow@gmail.com</a>.
       </p>
-    </section>
-  </main>
+    </div>
+  </div>
 </body>
 </html>
