@@ -79,6 +79,12 @@
         If you choose to link a Google account for cloud save, we also process the identifiers described in section 4.
         Linking is optional and the App is fully playable without it.
       </p>
+      <p>
+        If you choose to send feedback from <strong>Settings &rarr; Send feedback</strong>, we store the text you write
+        together with the App version, the game language, your device model, your shop stage and your anonymous
+        Firebase account identifier, so that we can understand and fix the issue. Please do not include personal
+        information in your message. Sending feedback is optional and we do not reply to it.
+      </p>
 
       <h2>2. Services Used by the App</h2>
       <table>
@@ -118,6 +124,16 @@
           <td>Optional: links your cloud save to your Google account</td>
           <td>Google account identifier, email address and sign-in token</td>
         </tr>
+        <tr>
+          <td>Cloud Firestore (feedback)</td>
+          <td>Optional: stores feedback you choose to send</td>
+          <td>Your message, App version, language, device model, shop stage, anonymous account identifier</td>
+        </tr>
+        <tr>
+          <td>Studio app recommendations (app.koreanblog.xyz)</td>
+          <td>Shows a card for another app from our studio; tapping it opens Google Play</td>
+          <td>None from you: the App only downloads the list of apps and their icons. Opening Google Play tells Play which panel the card was in</td>
+        </tr>
       </table>
       <p>
         The App does not contain a social feed or chat, and does not request contacts, photos, microphone, camera,
@@ -143,6 +159,11 @@
       <p>
         Cloud save first uses an anonymous Firebase account, which is not tied to your identity. If you sign in with
         Google, the save is linked to your Google account identifier so it can be restored on another device. We receive an account identifier, your email address (shown in the App so you can see which account is linked) and a sign-in token from Google. We do not receive your Google password.
+      </p>
+      <p>
+        You can log out at any time in <strong>Settings &rarr; Account &middot; Backup &rarr; Log out</strong>. Your progress
+        stays on the device and continues to be backed up under a new anonymous account; the backup under your Google
+        account stays in place so you can load it by linking the same account again.
       </p>
 
       <h2>5. Advertising</h2>
@@ -183,6 +204,10 @@
         <a href="mailto:purplusnow@gmail.com">purplusnow@gmail.com</a> from the address linked to your account, or from
         any address together with enough detail to identify the save. Data held by third-party providers is retained
         according to their own policies.
+      </p>
+      <p>
+        Feedback messages are kept for up to two years to help us improve the App and are then deleted. To have your
+        feedback deleted earlier, email <a href="mailto:purplusnow@gmail.com">purplusnow@gmail.com</a>.
       </p>
 
       <h2>9. Children&rsquo;s Privacy</h2>
