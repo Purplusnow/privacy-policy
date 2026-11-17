@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Seoul Subway - Live Metro Map</title>
+  <style>
+    :root {
+      --bg: #f4f5f7;
+      --panel: #ffffff;
+      --ink: #141822;
+      --muted: #5a6275;
+      --line: #e3e5ea;
+      --accent: #00a84d;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-top: 5px solid var(--accent);
+      border-radius: 12px;
+      padding: 28px 24px;
+      box-shadow: 0 8px 24px rgba(20, 24, 34, 0.05);
+    }
+    h1, h2 { margin: 0 0 12px; line-height: 1.25; }
+    h1 { font-size: 1.9rem; }
+    h2 { font-size: 1.15rem; margin-top: 28px; }
+    p, li, td, th { color: var(--muted); }
+    ul { padding-left: 20px; }
+    a { color: #1669c1; }
+    .meta { margin-bottom: 18px; color: var(--muted); font-size: 0.95rem; }
+    table { border-collapse: collapse; width: 100%; margin: 10px 0 4px; font-size: 0.95rem; }
+    th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f7f8fa; color: var(--ink); white-space: nowrap; }
+    code { background: #eef0f3; padding: 2px 6px; border-radius: 6px; color: var(--ink); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: November 17, 2026</p>
+
+      <h2>Who this policy covers</h2>
+      <p>
+        This Privacy Policy applies to the single mobile app identified below (the &ldquo;App&rdquo;), published by
+        <strong>Purplusnow</strong> (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;), the developer listed on the
+        App&rsquo;s Google Play store listing.
+      </p>
+      <table>
+        <tr><th>App name (English)</th><td>Seoul Subway - Live Metro Map</td></tr>
+        <tr><th>App name (Korean)</th><td>서울 지하철 노선도 - 실시간</td></tr>
+        <tr><th>Package name</th><td><code>com.purplusnow.subwaylive</code></td></tr>
+        <tr><th>Developer</th><td>Purplusnow</td></tr>
+        <tr><th>Contact email</th><td><a href="mailto:purplusnow@gmail.com">purplusnow@gmail.com</a></td></tr>
+        <tr><th>Developer website</th><td><a href="https://app.koreanblog.xyz/">https://app.koreanblog.xyz/</a></td></tr>
+      </table>
+      <p>
+        These details match the information published on the App&rsquo;s Google Play store listing. This policy covers
+        only the App named above and no other product.
+      </p>
+
+      <h2>1. Information We Collect</h2>
+      <p>
+        The App works without an account or sign-in. We do not collect your name, address, phone number, contacts or
+        payment card details, and the App does not request your location. Your favorite and recent stations and your
+        settings are stored only on your device. The App uses the services listed below, which may collect device,
+        usage, advertising and purchase-related information.
+      </p>
+
+      <h2>2. Services Used by the App</h2>
+      <table>
+        <tr><th>Service</th><th>Purpose</th><th>Typical data</th></tr>
+        <tr>
+          <td>Our transit data server (Cloudflare Workers)</td>
+          <td>Delivers live subway arrival information. It fetches public data from the Seoul Open Data Plaza and
+            serves the same anonymous data to every user.</td>
+          <td>The station you ask about and your IP address, as part of the network request. We do not link these to
+            an identity and do not keep request logs beyond the provider&rsquo;s standard operational logs.</td>
+        </tr>
+        <tr>
+          <td>Firebase Authentication and Cloud Firestore</td>
+          <td>Receive the feedback you choose to send from Settings. The first time you send feedback, the App
+            creates an anonymous Firebase identifier (no name, email or sign-in) used only to store your message and
+            to limit how often messages can be sent.</td>
+          <td>Anonymous user identifier, the feedback text and its context (see section 4), time sent. Stored in
+            Seoul, South Korea.</td>
+        </tr>
+        <tr>
+          <td>Google AdMob</td>
+          <td>A single banner ad at the bottom of the screen (none once you buy ad removal)</td>
+          <td>Advertising identifier, device and app interaction data, approximate location derived from IP</td>
+        </tr>
+        <tr>
+          <td>Google User Messaging Platform</td>
+          <td>Asks for advertising consent where the law requires it (for example the EEA and the UK)</td>
+          <td>Your consent choices, device identifiers</td>
+        </tr>
+        <tr>
+          <td>Google Analytics for Firebase</td>
+          <td>Usage analytics: launches and which features are used (for example opening a station or planning a route)</td>
+          <td>App instance identifier, device model and OS, in-app events, country</td>
+        </tr>
+        <tr>
+          <td>Firebase Crashlytics</td>
+          <td>Crash reports, so we can find and fix crashes</td>
+          <td>Crash stack trace, device model and OS, app version, app instance identifier</td>
+        </tr>
+        <tr>
+          <td>Google Play Billing</td>
+          <td>The one-time purchase that removes ads</td>
+          <td>Purchase token and order identifier, product identifier</td>
+        </tr>
+      </table>
+      <p>
+        The App has no social features or chat, and does not request contacts, photos, microphone, camera or location
+        permissions. Station searches are processed on your device.
+      </p>
+
+      <h2>3. How Information May Be Used</h2>
+      <ul>
+        <li>to show live arrival times for the stations you open</li>
+        <li>to show the banner ad and to respect your ad-removal purchase</li>
+        <li>to measure general app usage so we can improve the App</li>
+        <li>to diagnose and fix crashes</li>
+        <li>to verify and restore the ad-removal purchase, and to detect tampered or forged receipts</li>
+      </ul>
+
+      <h2>4. Feedback</h2>
+      <p>
+        If you send feedback from <strong>Settings &rarr; Send feedback</strong>, we receive the text you write together
+        with the app version, language, theme, device model and operating system version, so we can understand the
+        report. It is stored in Google Cloud Firestore (Seoul region) under an anonymous identifier that is created only
+        when you first send feedback. Please do not include personal information in feedback.
+      </p>
+
+      <h2>5. Advertising</h2>
+      <p>
+        The App shows one banner ad through Google AdMob. AdMob may collect device identifiers, approximate location
+        and app interaction data in accordance with Google&rsquo;s policies. Where the law requires it (for example in
+        the EEA and the UK), the App asks for your consent through Google&rsquo;s User Messaging Platform before
+        personalized ads are shown, and you can change your choice later in the App&rsquo;s settings. You can also
+        reset or limit your advertising identifier in your device settings.
+      </p>
+
+      <h2>6. In-App Purchase</h2>
+      <p>
+        The App offers a single one-time purchase that removes ads permanently. Payment is processed by Google Play
+        Billing; we never receive or store your payment card details. The entitlement is stored on your device and can
+        be restored from Settings.
+      </p>
+
+      <h2>7. Data Sharing</h2>
+      <p>
+        We do not sell your personal information. Data is processed by the services listed in section 2 only as
+        necessary to provide live transit data, advertising, analytics, crash reporting and billing.
+      </p>
+
+      <h2 id="data-deletion">8. Data Retention and Deletion</h2>
+      <p>
+        The App does not create an account, so there is no account to delete. Favorites, recent stations and settings
+        stay on your device until you clear the App&rsquo;s data or uninstall it. To ask us to delete feedback you
+        sent, email <a href="mailto:purplusnow@gmail.com">purplusnow@gmail.com</a> with enough detail to identify it.
+        Data held by third-party providers is retained according to their own policies.
+      </p>
+
+      <h2>9. Public Data Sources</h2>
+      <p>
+        Live arrival data: Seoul Open Data Plaza (Korea Open Government License Type 1). Map data &copy; OpenStreetMap
+        contributors (ODbL). Arrival times are estimates and may differ from actual service.
+      </p>
+
+      <h2>10. Children&rsquo;s Privacy</h2>
+      <p>
+        The App is not directed to children. We do not knowingly collect personal information from children. If you
+        believe a child has provided information through the App, contact us and we will review and delete it.
+      </p>
+
+      <h2>11. Your Choices</h2>
+      <ul>
+        <li>You can use every feature without signing in.</li>
+        <li>You can reset or limit your advertising identifier in your device settings.</li>
+        <li>You can remove the App from your device at any time.</li>
+      </ul>
+
+      <h2>12. Third-Party Policies</h2>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+        <li><a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543">How Google uses data from AdMob</a></li>
+        <li><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a></li>
+      </ul>
+
+      <h2>13. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy. Changes will be posted on this page with an updated date at the top.
+      </p>
+
+      <h2>14. Contact</h2>
+      <p>
+        Questions about this Privacy Policy: <a href="mailto:purplusnow@gmail.com">purplusnow@gmail.com</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
